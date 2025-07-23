@@ -146,6 +146,7 @@ nav.sticky .menu-btn{
   margin: 5px 0;
   /* color: #0E2431; */
   color: rgb(247, 244, 244);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 .home .button{
   margin: 14px 0;
@@ -431,6 +432,14 @@ footer .text span a:hover{
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
+}
+
+.custom-link{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  &:hover{
+    color: white;
+  }
 }
 
 /* Responsive Media Query */
