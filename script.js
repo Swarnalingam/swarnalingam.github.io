@@ -61,3 +61,20 @@ function swap() {
   }
   swapButton.innerText = swapButton.innerText == "Next" ? "Prev" : "Next";
 }
+
+function onGoLive(url){
+  let modalEle=document.getElementById(url);
+  modalEle.className=modalEle.className+' show';
+}
+
+function onCloseModal(url){
+  let modalEle=document.getElementById(url);
+  modalEle.className='modal';
+}
+
+function onGoProject(url){
+  let linkEle=document.createElement('a');
+  linkEle.href=url;
+  linkEle.click()
+  onCloseModal(url);
+}

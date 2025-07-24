@@ -532,7 +532,7 @@
             <div style="margin-bottom: 5px">
               Project Name: Hamly Business LC
             </div>
-            <div style="margin-bottom: 5px">Project Type : <span><a href="https://edu-tive.com/" class="custom-link">Task Management System</a></span></div>
+            <div style="margin-bottom: 5px">Project Type : <span><a class="custom-link" onclick="onGoLive('task-management-system')">Task Management System</a></span></div>
             <div style="margin-bottom: 5px">
               Skills used: Angular TS, scss, Typescript, Bootstrap
             </div>
@@ -580,6 +580,42 @@
         Reserved</span>
     </div>
   </footer>
+
+  <div class="modal" id="task-management-system" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Open Source</h5>
+        <button type="button" class="btn close" data-dismiss="modal" aria-label="Close" onclick="onCloseModal('task-management-system')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="mx-3">
+        <div class="row col-12 mb-3">
+           <div class="text"><i class="bi bi-chevron-right"></i>If you Want to login as Admin user,</div>
+           <div class="text"><strong>username :</strong><span>admin@gmail.com</span></div>
+           <div class="text"><strong>password :</strong><span>12345</span></div>
+        </div>
+        <div class="row col-12 mb-3">
+           <div class="text"><i class="bi bi-chevron-right"></i>If you Want to login as Manager user,</div>
+           <div class="text"><strong>username :</strong><span>manager@gmail.com</span></div>
+           <div class="text"><strong>password :</strong><span>2025</span></div>
+        </div>
+        <div class="row col-12">
+           <div class="text"><i class="bi bi-chevron-right"></i>If you Want to login as Member user,</div>
+           <div class="text"><strong>username :</strong><span>member@gmail.com</span></div>
+           <div class="text"><strong>password :</strong><span>ABC</span></div>
+        </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary w-100" onclick="onGoProject('task-management-system')">Get Start</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
   <script src="script.js"></script>
 </body>

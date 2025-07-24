@@ -108,6 +108,11 @@ nav.sticky .menu-btn{
   color: #fff;
 }
 
+.show{
+  background-color: rgba(0, 0, 0, 0.7);
+  display: block;
+}
+
 /* home section styling */
 .home{
   height: 100vh;
