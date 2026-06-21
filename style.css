@@ -10,7 +10,7 @@
 
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 6px;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -351,7 +351,8 @@ section .button button:hover{
 .services .boxes{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 30px;
+  /* justify-content: space-between; */
 }
 .services .boxes .box{
   margin: 20px 0;
