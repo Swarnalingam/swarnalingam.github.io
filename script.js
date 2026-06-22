@@ -45,7 +45,8 @@ for (var i = 0; i < navLinks.length; i++) {
 
 function download() {
   const createAnchorTag = document.createElement("a");
-  createAnchorTag.href = "./Images/9f9c465b-ce0d-4f40-9b79-3ce10e3af55c.pdf";
+  // createAnchorTag.href = "./Images/9f9c465b-ce0d-4f40-9b79-3ce10e3af55c.pdf";
+  createAnchorTag.href = "./Images/swarnaligam_karuppasamy.pdf";
   createAnchorTag.download;
   createAnchorTag.click();
 }
