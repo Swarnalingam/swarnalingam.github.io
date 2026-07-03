@@ -54,6 +54,9 @@ function download(fileName,fileType="pdf") {
 
 function swap() {
   const swapButton = document.getElementById("swap-button");
+   document.getElementById(aboutTab).style.display = "none";
+  if(aboutTab=="Passion")aboutTab = "Work-History";
+  else aboutTab = aboutTab=="Education"?"Passion":"Education";
   // if (swapButton.innerText == "Next") {
   //   document.getElementById("Passion").style.display = "none";
   //   document.getElementById("Education").style.display = "block";
@@ -62,9 +65,6 @@ function swap() {
   //   document.getElementById("Education").style.display = "none";
   // }
   // swapButton.innerText = swapButton.innerText == "Next" ? "Prev" : "Next";
-  document.getElementById(aboutTab).style.display = "none";
-  if(aboutTab=="Passion")aboutTab = "Work-History";
-  else aboutTab = aboutTab=="Education"?"Passion":"Education";
   
   document.getElementById(aboutTab).style.display = "block";
   swapButton.innerText = aboutTab=="Education" ? "Prev" : "Next";
