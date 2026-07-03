@@ -153,7 +153,7 @@ nav.sticky .menu-btn{
   color: rgb(247, 244, 244);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
-.home .button{
+/* .home .button{
   margin: 14px 0;
 }
 .home .button button{
@@ -172,7 +172,7 @@ nav.sticky .menu-btn{
   border-color: #4070f4;
   background-color: #fff;
   color: #4070f4;
-}
+} */
 
 /* About Section Styling */
 /* Those Elements Where We Have Apply Same CSS,
@@ -233,8 +233,9 @@ section .title span::after{
 section  .topic{
   color: #0E2431;
   font-size: 25px;
+  /* line-height: 0; */
   font-weight: 500;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .about-details .right p{
   text-align: justify;

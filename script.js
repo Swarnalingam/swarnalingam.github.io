@@ -3,6 +3,7 @@ let nav = document.querySelector("nav");
 let scrollBtn = document.querySelector(".scroll-button a");
 console.log(scrollBtn);
 let val;
+let aboutTab = "Passion";
 window.onscroll = function () {
   if (document.documentElement.scrollTop > 20) {
     nav.classList.add("sticky");
@@ -43,24 +44,30 @@ for (var i = 0; i < navLinks.length; i++) {
   });
 }
 
-function download() {
+function download(fileName,fileType="pdf") {
   const createAnchorTag = document.createElement("a");
-  // createAnchorTag.href = "./Images/9f9c465b-ce0d-4f40-9b79-3ce10e3af55c.pdf";
-  createAnchorTag.href = "./Images/swarnaligam_karuppasamy.pdf";
+  createAnchorTag.target = "_blank";
+  createAnchorTag.href = `./Images/${fileName}.${fileType}`;
   createAnchorTag.download;
   createAnchorTag.click();
 }
 
 function swap() {
   const swapButton = document.getElementById("swap-button");
-  if (swapButton.innerText == "Next") {
-    document.getElementById("Passion").style.display = "none";
-    document.getElementById("Education").style.display = "block";
-  } else {
-    document.getElementById("Passion").style.display = "block";
-    document.getElementById("Education").style.display = "none";
-  }
-  swapButton.innerText = swapButton.innerText == "Next" ? "Prev" : "Next";
+  // if (swapButton.innerText == "Next") {
+  //   document.getElementById("Passion").style.display = "none";
+  //   document.getElementById("Education").style.display = "block";
+  // } else {
+  //   document.getElementById("Passion").style.display = "block";
+  //   document.getElementById("Education").style.display = "none";
+  // }
+  // swapButton.innerText = swapButton.innerText == "Next" ? "Prev" : "Next";
+  document.getElementById(aboutTab).style.display = "none";
+  if(aboutTab=="Passion")aboutTab = "Work-History";
+  else aboutTab = aboutTab=="Education"?"Passion":"Education";
+  
+  document.getElementById(aboutTab).style.display = "block";
+  swapButton.innerText = aboutTab=="Education" ? "Prev" : "Next";
 }
 
 function onGoLive(url){
